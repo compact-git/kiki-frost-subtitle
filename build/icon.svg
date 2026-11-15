@@ -1,0 +1,61 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+  <defs>
+    <linearGradient id="face" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#ffffff"/><stop offset="1" stop-color="#cfefff"/></linearGradient>
+    
+    <linearGradient id="bgc" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#5eead4"/><stop offset=".45" stop-color="#22d3ee"/><stop offset="1" stop-color="#0e7490"/></linearGradient>
+    <linearGradient id="plate" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#ffffff"/><stop offset="1" stop-color="#d7f3ff"/></linearGradient>
+    <linearGradient id="rim" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#e6f8ff"/><stop offset="1" stop-color="#a9def0"/></linearGradient>
+    <g id="flake" stroke="#ffffff" stroke-linecap="round" fill="none">
+      <path d="M0-20V20M-17-10L17 10M-17 10L17-10" stroke-width="3.5"/>
+      <path d="M0-20l-5-5M0-20l5-5M0 20l-5 5M0 20l5 5M-17-10l-7 0M-17-10l-3-6M17 10l7 0M17 10l3 6M-17 10l-7 0M-17 10l-3 6M17-10l7 0M17-10l3-6" stroke-width="2.5"/>
+    </g>
+    <clipPath id="clip"><rect width="512" height="512" rx="112"/></clipPath>
+  </defs>
+  <rect width="512" height="512" rx="112" fill="url(#bgc)"/>
+  <g clip-path="url(#clip)"><use href="#flake" transform="translate(56 70) scale(.9)" opacity=".25"/><use href="#flake" transform="translate(470 250) scale(.7)" opacity=".2"/><use href="#flake" transform="translate(52 300) scale(.6)" opacity=".18"/></g>
+  <g transform="translate(0 -36)">
+  <ellipse cx="256" cy="438" rx="212" ry="44" fill="#0b4a5c" opacity=".3"/>
+  <ellipse cx="256" cy="414" rx="222" ry="58" fill="url(#plate)" stroke="#2b1d4a" stroke-width="12"/>
+  <ellipse cx="256" cy="408" rx="160" ry="34" fill="none" stroke="#9ad8ee" stroke-width="6"/>
+  <ellipse cx="236" cy="418" rx="118" ry="20" fill="#0e7490" opacity=".18"/>
+  <g transform="translate(74 84) scale(.8)">
+  <!-- 吹き出し(A→あ:同時通訳) -->
+  <g transform="translate(300 52)">
+    <path d="M10 0h150a26 26 0 0 1 26 26v60a26 26 0 0 1-26 26H66l-32 28 6-28H10a26 26 0 0 1-26-26V26A26 26 0 0 1 10 0z" fill="#ffd23f" stroke="#13284a" stroke-width="10"/>
+    <text x="34" y="84" font-family="Arial Black,Arial,sans-serif" font-weight="900" font-size="62" fill="#13284a">A</text>
+    <path d="M86 56h22m-8-9l9 9-9 9" fill="none" stroke="#13284a" stroke-width="7" stroke-linecap="round" stroke-linejoin="round"/>
+    <text x="114" y="84" font-family="M PLUS Rounded 1c,Noto Sans CJK JP,Noto Sans JP,sans-serif" font-weight="800" font-size="56" fill="#e0457b">あ</text>
+  </g>
+  <!-- ヘッドホンのバンド(頭の上) -->
+  <path d="M84 300C70 180 140 112 220 112s150 68 136 188" fill="none" stroke="#13284a" stroke-width="40" stroke-linecap="round"/>
+  <path d="M84 300C70 180 140 112 220 112s150 68 136 188" fill="none" stroke="#22d3ee" stroke-width="24" stroke-linecap="round"/>
+  <!-- 顔 -->
+  <path d="M220 136c92 0 154 66 154 152s-66 146-154 146S66 374 66 288 128 136 220 136z" fill="url(#face)" stroke="#13284a" stroke-width="14"/>
+  <!-- 雪の結晶の髪飾り -->
+  <g transform="translate(150 184) scale(.62)" stroke="#ffd23f" stroke-width="12" stroke-linecap="round">
+    <path d="M0-44V44M-38-22L38 22M-38 22L38-22"/>
+    <path d="M0-44l-12-12M0-44l12-12M0 44l-12 12M0 44l12 12" stroke-width="9"/>
+  </g>
+  <!-- 目(にっこり)・ほっぺ・口(「ふむふむ」と聞いている) -->
+  <path d="M150 276q18-20 36 0" fill="none" stroke="#13284a" stroke-width="12" stroke-linecap="round"/>
+  <path d="M244 276q18-20 36 0" fill="none" stroke="#13284a" stroke-width="12" stroke-linecap="round"/>
+  <ellipse cx="136" cy="318" rx="22" ry="12" fill="#ff8cc0" opacity=".8"/><ellipse cx="292" cy="318" rx="22" ry="12" fill="#ff8cc0" opacity=".8"/>
+  <path d="M194 334q20 20 40 0" fill="#13284a" stroke="#13284a" stroke-width="10" stroke-linejoin="round"/><ellipse cx="214" cy="342" rx="10" ry="5" fill="#ff5f8f"/>
+  <!-- ヘッドホンのイヤーカップ -->
+  <g>
+    <rect x="34" y="236" width="66" height="112" rx="30" fill="#22d3ee" stroke="#13284a" stroke-width="12"/>
+    <rect x="50" y="258" width="22" height="68" rx="11" fill="#bff4ff"/>
+    <rect x="340" y="236" width="66" height="112" rx="30" fill="#22d3ee" stroke="#13284a" stroke-width="12"/>
+    <rect x="368" y="258" width="22" height="68" rx="11" fill="#bff4ff"/>
+  </g>
+  <!-- 音の波(聞いている) -->
+  <path d="M428 252q18 40 0 80M452 236q28 56 0 112" fill="none" stroke="#ffffff" stroke-width="10" stroke-linecap="round" opacity=".85"/>
+
+  </g>
+  <path d="M34 414a222 58 0 0 0 444 0" fill="none" stroke="#2b1d4a" stroke-width="12"/>
+  <path d="M46 418a210 50 0 0 0 420 0l0 0a210 40 0 0 1-420 0z" fill="url(#rim)"/>
+  <path d="M34 414a222 58 0 0 0 444 0" fill="none" stroke="#2b1d4a" stroke-width="12"/>
+  <rect x="120" y="452" width="272" height="42" rx="21" fill="#2b1d4a"/>
+  <text x="256" y="482" text-anchor="middle" font-family="M PLUS Rounded 1c,Noto Sans JP,sans-serif" font-weight="800" font-size="26" fill="#ffffff">字幕</text>
+  </g>
+</svg>

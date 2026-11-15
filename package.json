@@ -1,0 +1,55 @@
+{
+  "name": "kiki-frost-subtitle",
+  "productName": "Kiki Frost 字幕",
+  "version": "1.0.0",
+  "description": "Kiki Frost Web の字幕(動画・配信の原文と訳文)を、自分の画面に枠なし・透明・最前面で表示する補助アプリ",
+  "main": "main.js",
+  "author": "compact",
+  "license": "MIT",
+  "scripts": {
+    "start": "electron .",
+    "dist": "electron-builder --win portable --x64 --publish never"
+  },
+  "dependencies": {
+    "ws": "^8.18.0"
+  },
+  "devDependencies": {
+    "electron": "^45.3.2",
+    "electron-builder": "^26.0.12"
+  },
+  "build": {
+    "appId": "jp.compact.kikifrost.subtitle",
+    "productName": "Kiki Frost 字幕",
+    "artifactName": "KikiFrostSubtitle_v${version}.exe",
+    "files": [
+      "main.js",
+      "preload.js",
+      "overlay.html",
+      "overlay.js",
+      "subrender.js",
+      "tray.png",
+      "tray@2x.png",
+      "build/icon.png",
+      "package.json"
+    ],
+    "directories": {
+      "output": "dist",
+      "buildResources": "build"
+    },
+    "win": {
+      "target": [
+        {
+          "target": "portable",
+          "arch": [
+            "x64"
+          ]
+        }
+      ],
+      "icon": "build/icon.ico"
+    },
+    "portable": {
+      "requestExecutionLevel": "user"
+    }
+  },
+  "keywords": []
+}
